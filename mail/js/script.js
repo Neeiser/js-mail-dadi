@@ -4,18 +4,24 @@
 
 
 /* 1 */
-let userMail = prompt('Inserisci la tua mail');
+let userInputMail = prompt('Inserisci la tua mail');
 
 
 /* 2 */
 const mailArrey = ['polpo@gmail.com', 'zebra@gmail.com', 'gatto@gmail.com', 'cane@gmail.com', 'caimano@gmail.com', 'anatra@gmail.com', 'gorilla@gmail.com', 'tartaruga@gmail.com', 'pulcino@gmail.com', 'pinguino@gmail.com', ];
+let match= false;
 
 for (let i = 0; i < mailArrey.length; i++){
 
-    if (mailArrey[i] == userMail) {
-        console.log('registrato')
-    } else {
-        console.log('non registrato')
+    if (mailArrey[i] == userInputMail) {
+        match= true;
     }
+}
 
+/* 3 */
+
+if (match == true) {
+    console.log('Registrato');
+} else {
+    console.log('Non Registrato');
 }
