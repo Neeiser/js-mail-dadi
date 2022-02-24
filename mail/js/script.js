@@ -13,7 +13,7 @@ let match= false;
 
 for (let mailCount = 0; mailCount < mailArrey.length; mailCount++){
 
-    if (mailArrey[i] == userInputMail) {
+    if (mailArrey[mailCount] == userInputMail) {
         match= true;
     }
 }
