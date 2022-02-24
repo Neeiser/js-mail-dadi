@@ -11,14 +11,6 @@ let userInputMail = prompt('Inserisci la tua mail');
 const mailArrey = ['polpo@gmail.com', 'zebra@gmail.com', 'gatto@gmail.com', 'cane@gmail.com', 'caimano@gmail.com', 'anatra@gmail.com', 'gorilla@gmail.com', 'tartaruga@gmail.com', 'pulcino@gmail.com', 'pinguino@gmail.com', ];
 let match= false;
 
-
-/* BONUS 
-let userWroteMail = document.getElementById('user-mail');
-let userSubmittedMail = document.getElementById('user-mail-submit');
-let userMailResult = document.getElementById('mail-test-result'); */
-
-/* 2 */
-
 for (let mailCount = 0; mailCount < mailArrey.length; mailCount++){
 
     if (mailArrey[i] == userInputMail) {
