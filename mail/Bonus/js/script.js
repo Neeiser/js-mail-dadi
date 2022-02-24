@@ -12,10 +12,10 @@ const mailArrey = ['polpo@gmail.com', 'zebra@gmail.com', 'gatto@gmail.com', 'can
 let match= false;
 
 
-/* BONUS 
+/* BONUS */
 let userWroteMail = document.getElementById('user-mail');
 let userSubmittedMail = document.getElementById('user-mail-submit');
-let userMailResult = document.getElementById('mail-test-result'); */
+let userMailResult = document.getElementById('mail-test-result');
 
 /* 2 */
 
