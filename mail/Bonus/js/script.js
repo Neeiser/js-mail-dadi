@@ -1,35 +1,25 @@
-/* 1: Chiedi all’utente la sua email */
-/* 2: Controlla che sia nella lista di chi può accedere. */
-/* 3: Stampa un messaggio appropriato sull’esito del controllo. */
 
-
-/* 1 */
-let userInputMail = prompt('Inserisci la tua mail');
-
-
-/* 2 */
 const mailArrey = ['polpo@gmail.com', 'zebra@gmail.com', 'gatto@gmail.com', 'cane@gmail.com', 'caimano@gmail.com', 'anatra@gmail.com', 'gorilla@gmail.com', 'tartaruga@gmail.com', 'pulcino@gmail.com', 'pinguino@gmail.com', ];
-let match= false;
 
-
-/* BONUS */
 let userWroteMail = document.getElementById('user-mail');
 let userSubmittedMail = document.getElementById('user-mail-submit');
 let userMailResult = document.getElementById('mail-test-result');
 
-/* 2 */
+let match= false;
 
-for (let mailCount = 0; mailCount < mailArrey.length; mailCount++){
+userSubmittedMail.addEventListener("click", function() {
+    
+    for (let mailCount = 0; mailCount < mailArrey.length; mailCount++){
+    
+        if (mailArrey[mailCount] == userWroteMail) {
+            match= true;
+        }
+    };
 
-    if (mailArrey[i] == userInputMail) {
-        match= true;
-    }
-}
-
-/* 3 */
-
-if (match == true) {
-    console.log('Registrato');
-} else {
-    console.log('Non Registrato');
-}
+    if (match == true) {
+        userMailResult.innerHTML = ('You are the chosen one!');
+        console.log(match);
+    } else {
+        userMailResult.innerHTML = ('Go away!');
+    }  
+});
